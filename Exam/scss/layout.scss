@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: $max-screen-size;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+.header {
+  background-color: #daac00;
+  height: 10em;
+  width: $default-width;
+
+  .header__container {
+    @extend .flex-row;
+    justify-content: $justify-content-s-a;
+
+    .header__logo {
+      width: 15em;
+
+      .logo__img {
+        width: $width-100;
+      }
+    }
+
+    .header__menu {
+      @extend .flex-row;
+      justify-content: $justify-content-s-b;
+      width: 47em;
+
+      .header__nav {
+        overflow: hidden;
+        padding-top: 15px;
+
+        .nav__list {
+          list-style: none;
+          margin: 0;
+          padding-left: 0;
+          display: flex;
+
+          .nav__link {
+            color: $color-white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 24px;
+            display: block;
+            padding-right: 30px;
+
+            &:hover {
+              transition: opacity 0.1s ease;
+              color: #665f60;
+              font-size: 28px;
+            }
+          }
+        }
+      }
+      .header__search-container {
+        margin-top: 10px;
+        @extend .flex-row;
+
+        input {
+          position: $position-r;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          width: 1%;
+          margin-bottom: 0;
+          border: none;
+          font-size: 17px;
+          background-color: #fcc302;
+          color: $color-white;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      .header__search-container-append {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+      .header__search-container__btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 10px 30px;
+        margin-left: -1px;
+        background: #00bdc9;
+        background-image: url("../images/Search\ Button.png");
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+
+        &:active {
+          background: #4e859e;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #343434;
+  height: 40em;
+}
