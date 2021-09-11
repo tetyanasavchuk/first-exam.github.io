@@ -29,6 +29,7 @@
 .page {
   font-family: "Poppins", sans-serif;
   opacity: 0.8;
+  min-width: 100vw;
 }
 
 .container {
@@ -82,7 +83,8 @@
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
   color: #665f60;
-  font-size: 28px;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 .header .header__container .header__menu .header__search-container {
   margin-top: 10px;
@@ -160,6 +162,7 @@
 .first .first__container .left-container .button:hover {
   background: #00bec9;
   border: none;
+  cursor: pointer;
 }
 
 .service {
@@ -197,6 +200,7 @@
 .service .service__container .left-container .button:hover {
   background: #00bec9;
   border: none;
+  cursor: pointer;
 }
 
 .about {
@@ -320,15 +324,19 @@
 }
 .team .team__container .team__row-container .block .social__icon-twitter {
   background-image: url("../images/Twitter (1).svg");
+  background-repeat: no-repeat;
 }
 .team .team__container .team__row-container .block .social__icon-fb {
   background-image: url("../images/WhatsApp (1).svg");
+  background-repeat: no-repeat;
 }
 .team .team__container .team__row-container .block .social__icon-in {
   background-image: url("../images/Instagram (1).svg");
+  background-repeat: no-repeat;
 }
 .team .team__container .team__row-container .block .social__icon-wa {
   background-image: url("../images/Facebook (1).svg");
+  background-repeat: no-repeat;
 }
 
 .rollover {

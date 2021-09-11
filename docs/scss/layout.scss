@@ -7,6 +7,7 @@
 .page {
   font-family: "Poppins", sans-serif;
   opacity: 0.8;
+  min-width: 100vw;
 }
 
 .container {
@@ -58,7 +59,7 @@
             &:hover {
               transition: opacity 0.1s ease;
               color: #665f60;
-              font-size: 28px;
+              transform: scale(1.15);
             }
           }
         }
@@ -148,6 +149,7 @@
         &:hover {
           background: #00bec9;
           border: none;
+          cursor: pointer;
         }
       }
     }
@@ -190,6 +192,7 @@
         &:hover {
           background: #00bec9;
           border: none;
+          cursor: pointer;
         }
       }
     }
@@ -330,15 +333,19 @@
 
         .social__icon-twitter {
           background-image: url("../images/Twitter\ \(1\).svg");
+          background-repeat: no-repeat;
         }
         .social__icon-fb {
           background-image: url("../images/WhatsApp\ \(1\).svg");
+          background-repeat: no-repeat;
         }
         .social__icon-in {
           background-image: url("../images/Instagram\ \(1\).svg");
+          background-repeat: no-repeat;
         }
         .social__icon-wa {
           background-image: url("../images/Facebook\ \(1\).svg");
+          background-repeat: no-repeat;
         }
       }
     }
